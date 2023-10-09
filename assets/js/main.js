@@ -155,3 +155,16 @@
     });
 
 })(jQuery);
+
+    //open description user menu
+    $(".user-box").click(function () {
+        $(".user-box").removeClass("descriptionmenu");
+        $(this).addClass("descriptionmenu");
+    });
+
+    //when personal area is open > click everywhere on screen should close it
+    $(document).click(function (event) {
+        if ($(event.target).closest(".user-box").length == 0) {
+            $(".user-box").removeClass("descriptionmenu");
+        }
+    });

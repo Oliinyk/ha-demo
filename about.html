@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>H&A</title>
@@ -46,13 +47,13 @@
                 <nav class="social-nav">
                     <ul class="social-menu">
                         <li class="item-social">
-                            <a href="https://twitter.com/securitymapper?lang=en"><i class="fa fa-brands fa-twitter"></i></a>
+                            <a href="https://twitter.com/securitymapper?lang=en" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
                         </li>
                         <li class="item-social">
-                            <a href="http://www.youtube.com/channel/UCm_mbQiaK2_a6iuhcMpoNIQ"><i class="fa fa-brands fa-youtube-play"></i></a>
+                            <a href="http://www.youtube.com/channel/UCm_mbQiaK2_a6iuhcMpoNIQ" target="_blank"><i class="fa fa-brands fa-youtube-play"></i></a>
                         </li>
                         <li class="item-social">
-                            <a href="https://www.linkedin.com/company/h-&-a-security-solutions"><i class="fa fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/company/h-&-a-security-solutions" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -64,7 +65,7 @@
 
         <section class="hero">
             <div class="wrap-banner-left">
-                <img src="assets/img/about/hero-bg.png" alt="images">
+                <img src="assets/img/hero/hero-index.png" alt="images">
             </div>
             <div class="wrap-banner-right">
                 <img src="assets/img/about/about-hero.png" alt="images">
@@ -131,156 +132,105 @@
                 </p>
             </div>
             <div class="row-ourteam">
-                <div class="wrap-member-team wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="user-box wrap-member-team wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="wrap-img">
-                        <img src="assets/img/our-team/justin-henderson.png" alt="Justin Henderson">
-                    </div>
-                    <div class="list-icon col-nav-social active">
-                        <a href="#" class="icon">
-                            <i class="fa fa-share-alt"></i>
-                        </a>
-                        <div class="hidden-list">
-                            <ul class="widgets-nav-social">
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="wrap-title">
-                        <h3 class="name-member"><a href="team.html">Justin Henderson</a></h3>
-                        <p class="woker">CEO</p>
-                    </div>
-                </div>
-                <div class="wrap-member-team wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="wrap-img">
-                        <img src="assets/img/our-team/josh-awalt.png" alt="Josh Awalt">
+                        <img src="assets/img/our-team/justin-henderson.png" alt="Justin Henderson" class="img-user">
                     </div>
                     <div class="list-icon col-nav-social">
                         <a href="#" class="icon">
-                            <i class="fa fa-share-alt"></i>
+                            <i class="fa fa-linkedin"></i>
                         </a>
-                        <div class="hidden-list">
-                            <ul class="widgets-nav-social">
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="user-info row">
+                        <div class="wrap-title">
+                            <h5 class="user-name">Justin Henderson</h5>
+                            <p class="user-position">CEO</p>
+                        </div>
+                        <div class="user-descript mCustomScrollbar" data-mcs-theme="light-2">
+                            <div class="content-scroll">
+                                <p>
+                                    Justin Henderson is a distinguished SANS Instructor and the course author of SEC555: SIEM with Tactical Analytics. With over a decade of experience in the Healthcare industry and various government contracts, he has honed his skills in network monitoring systems and incident analysis. A co-founder of H&A Security Solutions, LLC, Justin oversaw one of the world's largest security onion deployments with over 1200 network sensors. From the young age of thirteen, he embarked on a path in cybersecurity, providing professional services to organizations and acquiring over 60 industry certifications. As the 13th GSE to become a red and blue SANS Cyber Guardian, he is a leading voice in the field. He is also the author and co-author of multiple SANS courses, which showcase his expansive IT knowledge.
+                                </p>
+                                <p>
+                                    Dedicated to growing and shaping the cybersecurity community, Justin holds a strong belief that "as Iron sharpens iron, so one man sharpens another" (Proverbs 27:17). Whether it's training computer network defense analysts within the military or working closely with commercial vendors like Elastic Stack, his approach is collaborative, and value driven. In a field faced with a supply-demand imbalance, Justin actively addresses the gap by regularly releasing actionable courses, blogs, and webcasts aimed at helping professionals develop the skills they need for their roles. Whether his students are transitioning careers or looking for renewed confidence in their current jobs, Justin is committed to equipping them with the tools they need to succeed.
+                                </p>
+                                <p>
+                                    Outside of his professional endeavors, Justin is a family-oriented man with a passion for hobby farming. Holding a Bachelor of Science in Network Design and Administration from Western Governors University, his credentials also extend to 60+ certifications in various domains, from networking to governance and project management. He has also mentored aspiring tech professionals and developed the virtual dojo—a fully automated Cloud Computing solution showcase environment. In his free time, Justin relishes moments spent with his family on their hobby farm, which includes a diverse range of animals, from horses to miniature donkeys. Deeply rooted in his Christian faith, he extends the farm experience to youth ministry, offering a healing environment that benefits both the young and the old.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap-title">
-                        <h3 class="name-member"><a href="team.html">Josh Awalt</a></h3>
-                        <p class="woker">CIO</p>
-                    </div>
                 </div>
-                <div class="wrap-member-team wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <div class="user-box wrap-member-team wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="wrap-img">
-                        <img src="assets/img/our-team/adam-moore.png" alt="Adam Moore">
+                        <img src="assets/img/our-team/josh-awalt.png" alt="Josh Awalt" class="img-user">
                     </div>
                     <div class="list-icon col-nav-social">
                         <a href="#" class="icon">
-                            <i class="fa fa-share-alt"></i>
+                            <i class="fa fa-linkedin"></i>
                         </a>
-                        <div class="hidden-list">
-                            <ul class="widgets-nav-social">
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="user-info row">
+                        <div class="wrap-title">
+                            <h5 class="user-name">Josh Awalt</h5>
+                            <p class="user-position">CIO</p>
+                        </div>
+                        <div class="user-descript mCustomScrollbar" data-mcs-theme="light-2">
+                            <div class="content-scroll">
+                                <p>
+                                    Josh brings over 15 years of expertise in Information Technology to the team, with a skill set enriched by experiences in both the private and public sectors. His understanding of Information Security is sharpened by a significant portion of his career in higher education and healthcare, two sectors known for their complex security needs. Having attained a master's degree in information security and assurance, Josh also holds over 30 industry certifications that make him a versatile asset in the rapidly evolving field of cybersecurity.
+                                </p>
+                                <p>
+                                    Josh is driven by the conviction that effective security is an ongoing process that requires both technical acumen and a deep understanding of the industries served. His training and cross-sector experience allow him to bring unique perspectives to the table, enabling him to craft security solutions that meet specific institutional needs. With his unwavering commitment to improving his own skills and those of his team, Josh personifies the blend of theoretical and practical expertise that is essential in today's myriad of security challenges.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap-title">
-                        <h3 class="name-member"><a href="team.html">Adam Moore</a></h3>
-                        <p class="woker">COO</p>
-                    </div>
                 </div>
-                <div class="wrap-member-team wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div class="user-box wrap-member-team wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                     <div class="wrap-img">
-                        <img src="assets/img/our-team/justin-henderson.png" alt="images">
+                        <img src="assets/img/our-team/adam-moore.png" alt="Adam Moore" class="img-user">
                     </div>
                     <div class="list-icon col-nav-social">
                         <a href="#" class="icon">
-                            <i class="fa fa-share-alt"></i>
+                            <i class="fa fa-linkedin"></i>
                         </a>
-                        <div class="hidden-list">
-                            <ul class="widgets-nav-social">
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="services.html">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="user-info row">
+                        <div class="wrap-title">
+                            <h5 class="user-name">Adam Moore</h5>
+                            <p class="user-position">COO</p>
+                        </div>
+                        <div class="user-descript mCustomScrollbar" data-mcs-theme="light-2">
+                            <div class="content-scroll">
+                                <p>
+                                    Adam Moore serves as the Chief Operating Officer of H&A Security Solutions LLC, where he steers the company's day-to-day operations and long-term strategic initiatives. With a seasoned background in corporate leadership, Adam brings over a decade of expertise in optimizing organizational performance to his role. He is adept at financial management and staff oversight, ensuring that the company runs efficiently and effectively. Committed to instilling a culture of excellence, innovation, and teamwork, Adam is an invaluable asset to the H&A family. Outside the office, he relishes quality time with his family and life on his small farm, where he resides with his wife and four children.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap-title">
-                        <h3 class="name-member"><a href="team.html">Harry Garrett</a></h3>
-                        <p class="woker">Design Expert</p>
+                </div>
+                <div class="user-box wrap-member-team wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <div class="wrap-img">
+                        <img src="assets/img/our-team/brian-carroll.jpg" alt="images" class="img-user">
+                    </div>
+                    <div class="list-icon col-nav-social">
+                        <a href="#" class="icon">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="user-info row">
+                        <div class="wrap-title">
+                            <h5 class="user-name">Brian Carroll</h5>
+                            <p class="user-position">CTO</p>
+                        </div>
+                        <div class="user-descript mCustomScrollbar" data-mcs-theme="light-2">
+                            <div class="content-scroll">
+                                <p>
+                                    Brian Carroll ...
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,13 +278,13 @@
                         </div>
                         <ul class="list-social">
                             <li class="item-social">
-                                <a href="https://twitter.com/securitymapper?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/securitymapper?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </li>
                             <li class="item-social">
-                                <a href="http://www.youtube.com/channel/UCm_mbQiaK2_a6iuhcMpoNIQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="http://www.youtube.com/channel/UCm_mbQiaK2_a6iuhcMpoNIQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                             </li>
                             <li class="item-social">
-                                <a href="https://www.linkedin.com/company/h-&-a-security-solutions"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/company/h-&-a-security-solutions" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -374,6 +324,7 @@
     <!-- Javascript -->
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

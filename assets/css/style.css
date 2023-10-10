@@ -1541,6 +1541,7 @@ label.error {
     .services-table .services-item .wrap-img.small-img img {
         max-width: 38px;
         max-height: 38px;
+        padding: 0;
     }
     .services-table {
         margin: 0;
@@ -1657,5 +1658,15 @@ label.error {
     }
     .copyright-wrap a + a::before {
         display: none;
+    }
+    .services-table .services-item-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-table .services-item .wrap-img {
+        width: 100%;
+    }
+    .services-table .services-item .wrap-img.small-img {
+        margin-bottom: 10px;
     }
 }

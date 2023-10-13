@@ -407,6 +407,26 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
 }
+.services .content-tab .text-col {
+    padding: 0 0 25px 0;
+    flex: 0 0 100%;
+    display: flex;
+    max-width: 100%;
+}
+.services .text-col-inner {
+   width: 50%; 
+}
+.services .text-col-inner:first-child {
+    padding-right: 15px;
+}
+.services .text-col-inner:nth-child(2n) {
+    padding-left: 15px;
+}
+.services .content-tab .img-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
 .content-tab .img-col {
     flex: 0 0 45%;
     max-width: 45%;
@@ -1551,6 +1571,21 @@ label.error {
     }
     .services-table {
         margin: 0;
+    }
+    .services .content-tab .text-col {
+        flex-wrap: wrap;
+    }
+    .services .text-col-inner {
+        width: 100%;
+    }
+    .services .text-col-inner:first-child {
+        padding-right: 0;
+    }
+    .services .text-col-inner:nth-child(2n) {
+        padding-left: 0;
+    }
+    .services .tab-section .content-tab .text-col p {
+        margin: 0 0 10px;
     }
     .for-more {
         flex-direction: column;

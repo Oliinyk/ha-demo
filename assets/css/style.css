@@ -266,10 +266,12 @@ body {
 .hero {
     display: flex;
     position: relative;
-}
-.home .hero {
     background-image: url('../img/hero/hero-index.png');
     background-size: cover;
+}
+.home .hero {
+    /* background-image: url('../img/hero/hero-index.png');
+    background-size: cover; */
     padding: 290px 0 50px;
     margin-bottom: 7px;
 }
@@ -783,8 +785,9 @@ label.error {
 .wrap-banner-left img {
     object-fit: cover;
     object-position: 0 0;
-    max-height: 365px;
+    height: 100%;
     width: 100%;
+    max-height: 370px;
 }
 .wrap-banner-right {
     flex: 0 0 55.88889%;
@@ -794,6 +797,8 @@ label.error {
 .wrap-banner-right img {
     object-fit: cover;
     height: 100%;
+    width: 100%;
+    max-height: 370px;
 }
 .hero-container {
     position: absolute;
@@ -1033,7 +1038,7 @@ label.error {
     background-color: transparent;
 }
 .row-ourteam .descriptionmenu .user-descript {
-    background-color: rgba(0, 158, 219, 0.85);
+    background-color: #0053ff;
     display: block;
     width: 100%;
     top: 75px;
@@ -1060,9 +1065,8 @@ label.error {
 }
 .row-ourteam .descriptionmenu .user-info {
     width: 100%;
-    background-color: rgba(0, 158, 219, 0.85);
+    background-color: #0053ff;
     left: 0;
-    /* top: -72px; */
     top: -38%;
     padding-left: 0;
     padding: 8px 21px 0;
@@ -1074,7 +1078,6 @@ label.error {
 .row-ourteam .descriptionmenu .user-position {
     color: #fff;
 }
-
 
 /* footer */
 
@@ -1090,15 +1093,18 @@ label.error {
 }
 .our-contact {
     margin: -30px 0 50px;
+    grid-template-columns: repeat(2,minmax(0,1fr));
 }
 .our-inner {
     display: flex;
     align-items: center;
     border-radius: 5px;
     padding: 30px 15px;
+    max-width: 370px;
 }
 .our-inner:nth-child(odd) {
     background-color: #0053ff;
+    margin: 0 0 0 auto;
 }
 .our-inner:nth-child(even) {
     background-color: #4C475C;

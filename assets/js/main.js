@@ -25,7 +25,7 @@
 
     // Tab
     let Tab = function() {
-        $(".menu-tab li").click(function() {
+        $(document).on('click', '.menu-tab li', function() {
             $(".menu-tab li").removeClass("active").eq($(this).index()).addClass("active");
             $(".content-tab .content-item").hide().eq($(this).index()).fadeIn()
         }).eq(0).addClass("active");
@@ -41,9 +41,9 @@
             }
         });
 
-        $('#scroll-top').on('click', function() {
+        $(document).on("click", "#scroll-top", function() {
             $('html, body').animate({ scrollTop: 0 } , 'easeInOutExpo');
-        return false;
+            return false;
         });
     }
 
@@ -153,6 +153,20 @@
         ajaxContactForm();
         ajaxCommentForm();
     });
+
+
+    //  Write the value to the localStorage on click
+    $(document).on("click", ".menu-tab li", function() {
+        localStorage.setItem("activeTab", $(this).data("name"));
+    });
+    const localStorageValue = localStorage.getItem("activeTab");
+    if(localStorageValue) {
+        $(".menu-tab li[data-name='" + localStorageValue + "']").addClass("active");
+        $(".content-tab .content-item[data-content='" + localStorageValue + "']").addClass("active");
+    } else {
+        $(".menu-tab li").eq(0).addClass("active");
+        $(".content-tab .content-item").eq(0).addClass("active");
+    }
 
 })(jQuery);
 

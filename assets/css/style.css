@@ -1104,7 +1104,7 @@ label.error {
 .footer {
     background-color: #292633;
     color: #fff;
-    padding: 10px 0;
+    padding: 50px 0 10px;
 }
 .wrap-our-footer {
     display: grid;
@@ -1131,27 +1131,44 @@ label.error {
 }
 
 .wrap-our-footer .wrap-about {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 0 0;
 }
 .logo-footer {
-    margin: 0 0 75px;
+    margin: 0 0 25px;
+    order: 1;
 }
-.our-inner .list-info {
+.list-info {
+    display: flex;
+    flex-wrap: wrap;
     color: #fff;
-    padding: 0 0 0 15px;
+    order: 2;
 }
-.our-inner .list-info li a {
+.list-info a {
+    display: flex;
     color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -1px;
+    max-width: 250px;
+    opacity: .8;
 }
-.our-inner .list-info .title {
+.list-info a:hover {
+    opacity: 1;
+}
+.list-info a + a {
+    margin: 15px 0 0;
+}
+.list-info .title {
     margin-bottom: 5px;
 }
-.our-inner .list-info .title a {
+.list-info .title a {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
 }
-.our-inner .list-info .sub-title a {
+.list-info .sub-title a {
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -1px;
@@ -1175,6 +1192,7 @@ label.error {
 .list-social {
     display: flex;
     margin: 25px 0;
+    order: 3;
 }
 .list-social li + li {
     margin-left: 15px;
@@ -1467,6 +1485,21 @@ label.error {
     .wrap-border-img {
         display: none;
     }
+    .footer .foo-col {
+        max-width: 100%;
+    }
+    .list-info {
+        order: 3;
+        width: 100%;
+        margin: 25px 0 0;
+    }
+    .list-info a {
+        width: 100%;
+        max-width: calc(50% - 1rem);
+    }
+    .list-info a + a {
+        margin: 0 0 0 2rem;
+    }
 }
 @media (max-width: 767px) {
     .home .hero {
@@ -1646,6 +1679,9 @@ label.error {
     .row-ourteam .wrap-member-team .wrap-title {
         margin: -50px 15px 0 15px;
     }
+    .list-info a {
+       font-size: 16px;
+    }
 }
 @media only screen and (max-width: 479px) {
     .contact-wrap,
@@ -1709,5 +1745,11 @@ label.error {
     }
     .services-table .services-item .wrap-img.small-img {
         margin-bottom: 10px;
+    }
+    .list-info a {
+        max-width: 100%;
+    }
+    .list-info a + a {
+        margin: 1rem 0 0;
     }
 }

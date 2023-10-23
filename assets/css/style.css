@@ -1119,9 +1119,58 @@ label.error {
 .services-table .row-ourteam .descriptionmenu .user-info .wrap-title {
     font-size: 18px;
 }
+.services-table .user-box .user-info {
+    padding-top: 0;
+}
 .row-ourteam .descriptionmenu .user-name,
 .row-ourteam .descriptionmenu .user-position {
     color: #fff;
+}
+
+/* card */
+.card {
+    position: relative;
+}
+.card-front{
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 1s cubic-bezier(.2,.85,.4,1.275);
+}
+.card-back {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: transform 1s cubic-bezier(.2,.85,.4,1.275);
+    background-color: #0053ff;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+.card-back .wrap-title {
+    font-size: 20px;
+    text-wrap: balance;
+    margin-bottom: 7px;
+    line-height: 1;
+}
+.card-back .content-scroll {
+    text-wrap: balance;
+    line-height: 1.2    ;
+}
+.card:hover .card-back {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.card:hover .card-front {
+    transform: rotateY(180deg);
+    z-index: -1;
 }
 
 /* footer */

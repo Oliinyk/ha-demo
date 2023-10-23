@@ -1302,6 +1302,13 @@ label.error {
     height: 16px;
     background-color: #fff;
 }
+.textholder-section {
+    padding: 50px 0;
+    color: #616161;
+}
+.textholder-section p {
+    margin-bottom: 1.5rem;
+}
 
 @media (max-width: 1630px) {
     .header .menu-item {

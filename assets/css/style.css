@@ -547,6 +547,7 @@ body {
     width: 100%;
 }
 .tab-section .content-tab .title-heading {
+    text-transform: uppercase;
     font-size: 42px;
     max-width: 100%;
     letter-spacing: -3px;
@@ -663,7 +664,7 @@ body {
 }
 
 .contact-form-section {
-    padding: 35px 0;
+    padding: 50px 0;
 }
 .contact .our-contact {
     margin: 0 0 102px;

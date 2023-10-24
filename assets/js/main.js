@@ -11,7 +11,7 @@
     let Preloader = function() {        
         $(window).on("load", function () {
             $(".loader").fadeOut();
-            $("#loading-overlay").delay(500).fadeOut('slow',function(){
+            $("#loading-overlay").delay(250).fadeOut('slow',function(){
                 $(this).remove();
             }); 
         });
